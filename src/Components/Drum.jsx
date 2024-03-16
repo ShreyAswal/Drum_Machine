@@ -33,8 +33,6 @@ function Drum() {
     setPower(!power);
   };
 
-  //   const display = document.getElementById("display");
-
   //For Volume Range
   const handleVolume = (e) => {
     if (power) {
@@ -48,14 +46,13 @@ function Drum() {
   };
 
   //For the drum pads
-  const playSound = (name,sound) => {
+  const playSound = (name, sound) => {
     if (power) {
       const display = document.getElementById("display");
-      console.log(name)
-      //   console.log(name + " : " + sound);
-        display.innerHTML = name;
+      console.log(name);
+      display.innerHTML = name;
       const audio = new Audio(sound);
-        console.log(audio);
+      console.log(audio);
       audio.volume = volume; // Set volume based on the current volume level
       audio.play();
     }
@@ -89,7 +86,7 @@ function Drum() {
               key={name}
               id={i + 1}
               className="drum-pad"
-              onClick={() => playSound(name,sound)}
+              onClick={() => playSound(name, sound)}
             >
               {["Q", "W", "E", "A", "S", "D", "Z", "X", "C"][i]}
             </button>
