@@ -1,15 +1,10 @@
 import './App.css';
+import Drum from './Components/Drum';
 
 function App() {
   return (
     <div className="App">
-      <h1>Drum Machine!</h1>
-      <div className="drum-machine">
-        <div className="drum-buttons">
-
-        </div>
-      </div>
-
+      <Drum/>
     </div>
   );
 }
