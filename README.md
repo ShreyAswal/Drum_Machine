@@ -15,6 +15,9 @@ The drum machine is a web application that allows users to play different drum s
 - HTML
 - CSS
 - JavaScript
+- React
+- Netlify
+- Git Commands
 
 ## Installation
 1. Clone the repository: `git clone https://github.com/ShreyAswal/Drum_Machine.git`
